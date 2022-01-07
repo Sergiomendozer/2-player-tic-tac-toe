@@ -29,7 +29,7 @@ def did_x_win(player_x_name, player_o_name,tic_tac_toe_chart):
     elif position_three == "X" and position_five == "X" and position_seven == "X":
         print (player_x_name +" is the winner!")
     else:
-        print ('return to player o function')
+        return tic_tac_toe_player_o (player_x_name, player_o_name,tic_tac_toe_chart)
 
 #####################################
 # tic_tac_toe_chart = "1 2 3 \n4 5 6\n7 8 9\n" 
