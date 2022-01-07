@@ -1,16 +1,4 @@
 # did x win, need two functions
-#use find of each and label
-# 1= 0
-# 2 =2
-# 3 =4
-# 4= 7
-# 5= 9
-# 6= 11
-# 7= 13
-# 8= 15
-# 9= 17
-# print (tic_tac_toe_chart[17])
-
 def did_x_win(player_x_name, player_o_name,tic_tac_toe_chart):
     position_one = tic_tac_toe_chart[0]
     position_two = tic_tac_toe_chart[2]
@@ -39,7 +27,7 @@ def did_x_win(player_x_name, player_o_name,tic_tac_toe_chart):
     elif position_one == "X" and position_five == "X" and position_nine == "X":
         print (player_x_name +" is the winner!")
     elif position_three == "X" and position_five == "X" and position_seven == "X":
-        print ("yellow")
+        print (player_x_name +" is the winner!")
     else:
         print ('return to player o function')
 
