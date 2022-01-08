@@ -1,3 +1,4 @@
+#Prompts user to select position and whatever user selects it will change number to X
 def tic_tac_toe_player_x (player_x_name, player_o_name,tic_tac_toe_chart):
     print(tic_tac_toe_chart) 
     position = input (player_x_name + ", select a position you would like to place X:")
@@ -6,9 +7,8 @@ def tic_tac_toe_player_x (player_x_name, player_o_name,tic_tac_toe_chart):
     tic_tac_toe_chart = tic_tac_toe_chart[:replace] + 'X' + tic_tac_toe_chart[replace+1:]
     #call is there a winner function
     did_x_win(player_x_name, player_o_name,tic_tac_toe_chart)
-    # add print to function above
-    # print(tic_tac_toe_chart) 
 
+#Prompts user to select position and whatever user selects it will change number to O
 def tic_tac_toe_player_o (player_x_name, player_o_name,tic_tac_toe_chart):
     print(tic_tac_toe_chart) 
     position = input (player_o_name + ", select a position you would like to place O:")
@@ -19,6 +19,7 @@ def tic_tac_toe_player_o (player_x_name, player_o_name,tic_tac_toe_chart):
     did_o_win(player_x_name, player_o_name,tic_tac_toe_chart)
     # return tic_tac_toe_player_x(player_x_name, player_o_name,tic_tac_toe_chart)
 
+# checks to see if player X won if not then keeps game keeps playing
 def did_x_win(player_x_name, player_o_name,tic_tac_toe_chart):
     position_one = tic_tac_toe_chart[0]
     position_two = tic_tac_toe_chart[2]
@@ -50,7 +51,8 @@ def did_x_win(player_x_name, player_o_name,tic_tac_toe_chart):
         print (player_x_name +" is the winner!")
     else:
         return tic_tac_toe_player_o (player_x_name, player_o_name,tic_tac_toe_chart)
-    
+
+# checks to see if player O won if not then keeps game keeps playing
 def did_o_win(player_x_name, player_o_name,tic_tac_toe_chart):
     position_one = tic_tac_toe_chart[0]
     position_two = tic_tac_toe_chart[2]
@@ -82,6 +84,8 @@ def did_o_win(player_x_name, player_o_name,tic_tac_toe_chart):
         print (player_o_name +" is the winner!")
     else:
         return tic_tac_toe_player_x (player_x_name, player_o_name,tic_tac_toe_chart)
+
+# prompts users to enter name and start playing game
 player_x_name = str(input("Enter player name that wil play X:"))
 player_o_name = str(input("Enter player name that wil play O:"))
 tic_tac_toe_chart = "1 2 3 \n4 5 6\n7 8 9\n"
