@@ -1,5 +1,6 @@
 RED="\033[0;31m"          
 BLUE="\033[0;34m" 
+GREEN="\033[0;32m"
 END = '\033[0m'
 
 #Prompts user to select position and whatever user selects it will change number to X

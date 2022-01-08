@@ -1,15 +1,19 @@
 # # did x win, need two functions
 # def did_x_win(player_x_name, player_o_name,tic_tac_toe_chart):
-#     position_one = tic_tac_toe_chart[0]
-#     position_two = tic_tac_toe_chart[2]
-#     position_three = tic_tac_toe_chart[4]
-#     position_four = tic_tac_toe_chart[7]
-#     position_five = tic_tac_toe_chart[9]
-#     position_six = tic_tac_toe_chart[11]
-#     position_seven= tic_tac_toe_chart[13]
-#     position_eight = tic_tac_toe_chart[15]
-#     position_nine = tic_tac_toe_chart[17]
+    position_one = tic_tac_toe_chart[0]
+    position_two = tic_tac_toe_chart[2]
+    position_three = tic_tac_toe_chart[4]
+    position_four = tic_tac_toe_chart[7]
+    position_five = tic_tac_toe_chart[9]
+    position_six = tic_tac_toe_chart[11]
+    position_seven= tic_tac_toe_chart[13]
+    position_eight = tic_tac_toe_chart[15]
+    position_nine = tic_tac_toe_chart[17]
 #     # 1 2 3 is filled with X
+
+elif position_one != "1" and position_two != "2" and position_three != "3" and position_five != "4" and position_six != "6"and position_seven != "7"and position_eight != "8"and position_nine != "9":
+    print (GREEN + "its a tie"+ END)
+    return play_again(player_x_name, player_o_name,tic_tac_toe_chart)
 #     if position_one == "X" and position_two == "X" and position_three == "X":
 #         print (player_x_name +" is the winner!")
 #     # 4 5 6 filled with X
