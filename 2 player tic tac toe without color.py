@@ -7,8 +7,10 @@ def tic_tac_toe_player_x (player_x_name, player_o_name,tic_tac_toe_chart):
     #call is there a winner function
     did_x_win(player_x_name, player_o_name,tic_tac_toe_chart)
     # add print to function above
-    print(tic_tac_toe_chart) 
+    # print(tic_tac_toe_chart) 
+
 def tic_tac_toe_player_o (player_x_name, player_o_name,tic_tac_toe_chart):
+    print(tic_tac_toe_chart) 
     position = input (player_o_name + ", select a position you would like to place O:")
     replace = tic_tac_toe_chart.find(position)
     replace = tic_tac_toe_chart.find(position)
